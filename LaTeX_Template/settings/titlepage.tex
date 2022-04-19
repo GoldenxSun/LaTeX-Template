@@ -1,0 +1,52 @@
+\newgeometry{margin=2.5cm}
+\begin{titlepage}
+\thispagestyle{empty}
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\hspace{1cm}
+\center
+
+\begin{figure}
+    \centering
+    \includegraphics{images/PHWTLogo.jpg}\\
+\end{figure}
+\textsc{\Large \Modul}\\[0.8cm]
+\MSonehalfspacing
+\textsc{\Large \Aktivitaet}\\[1.0cm]
+
+\HRule\\[1.4cm]
+\MSdoublespacing
+{ \huge \bfseries \Thema}\\[0.2cm]
+{ \large \Versuch}\\[0.3cm] 
+\HRule \\[1.0cm]
+\MSonehalfspacing
+
+\begin{minipage}[t]{0.8\textwidth}
+	\begin{itemize}
+	\item[\emph{Semester:}] \Semester
+	\item[\emph{Ersteller:}] \Author
+	\item[\emph{Matr.-Nr.:}] \Matrikelnummer
+	\item[\emph{Fachsemester:}] \Fachsemester
+	\item[\emph{Modul:}] \Modul
+	\item[\emph{Zuständiger Betreuer:}] \Betreuer
+	\item[\emph{Durchgeführt am:}] \Durchfuehrungsdatum
+	\item[\emph{Ort:}] \Ort
+	\end{itemize}
+\end{minipage}
+
+\vspace{2.9cm}
+
+\flushright \emph{Abgabedatum:} \today
+\end{titlepage}
+\restoregeometry
+
+\setstretch{\TOCstretch}
+\microtypesetup{protrusion=false}
+\pdfbookmark{\contentsname}{toc}
+\tableofcontents
+\microtypesetup{protrusion=true}
+\thispagestyle{empty}
+
+\MSonehalfspacing
+\newpage
+\setcounter{page}{1}
+\pagestyle{fancy}

@@ -1,0 +1,18 @@
+\addtocontents{toc}{\protect\setcounter{tocdepth}{0}}
+\renewcommand{\appendixtocname}{Anhang}
+\addappheadtotoc
+\renewcommand{\appendixpagename}{Anhang}
+\appendices
+\appendixpage
+\appendixtitleoff
+\newcounter{pdfpage}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Example Appendix with pdf, Page 8
+Erster Eintrag: \hyperref[file-1]{Erste Seite}
+
+\includepdf[scale=0.9, frame, pages=3, pagecommand={\thispagestyle{plain}\refstepcounter{pdfpage}\label{file-\thepdfpage}}]{attachments/phwt_style.pdf}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\MSonehalfspacing
+\newpage
+\restoreapp

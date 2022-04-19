@@ -1,0 +1,59 @@
+% Coding
+\usepackage[utf8]{inputenc}
+% Explicit mention of the font
+\usepackage[T1]{fontenc} 
+% \usepackage{helvet}
+% \usepackage[onehalfspacing]{setspace}
+% Language
+\usepackage[ngerman]{babel} 
+% always needed for embedding graphics
+\usepackage{graphicx} 
+% If you want to check the layout, you can insert text here with \blindtext
+\usepackage{blindtext} 
+% For the distance between 2 paragraphs
+\usepackage{parskip}
+% Exact setting of parskip
+\setlength{\parskip}{12pt plus80pt minus10pt} 
+% With \todo{} insert todo
+\usepackage{easy-todo} 
+% For proper quotation marks
+\usepackage{csquotes}
+% For a German formatting of the submission date / affidavit
+\usepackage[iso, german]{isodate} 
+% Beaver backend for bibliography
+\usepackage[style=apa, backend=biber, sortlocale=deDE]{biblatex} 
+% Incorporating the literature
+\addbibresource{literature/bibliography.bib}
+% Customize language settings in the bibliography
+\DeclareLanguageMapping{german}{german-apa}  
+% For fine-tuning punctuation
+\usepackage[activate={true,nocompatibility},
+	final,
+	tracking=true,
+	kerning=true,
+	expansion=true,
+	spacing=true,
+	factor=1050,
+	stretch=25,
+	shrink=10]{microtype}
+% other packages
+\usepackage{booktabs}
+\usepackage{appendix}
+\usepackage[rflt]{floatflt}
+\usepackage{fancyvrb}
+% Clickable but unmarked links in PDF
+\usepackage[final]{pdfpages}
+\usepackage[hidelinks, bookmarks, bookmarksopen, bookmarksdepth=2]{hyperref}
+% \usepackage{bookmark}
+\usepackage[nottoc]{tocbibind}
+\usepackage{setspace}
+% For nicer headers / footers and footnotes.
+\usepackage{fancyhdr} 
+% Margins
+\usepackage[head=40pt, foot=40pt, right=2.5 cm, left=2.5 cm, top=2.5 cm, bottom=3 cm]{geometry} 
+\usepackage{pbox}
+\usepackage{tabulary}
+\usepackage{placeins}
+\usepackage{enumitem}
+\usepackage{datetime}
+\usepackage{siunitx}

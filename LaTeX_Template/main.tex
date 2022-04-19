@@ -1,0 +1,69 @@
+\documentclass[a4paper, 12pt]{article}
+\input{settings/defines}
+\input{settings/packages}
+\input{settings/page}
+
+\begin{document}
+\input{settings/titlepage}
+\setcounter{page}{1}
+\newcommand{\groesse}{13cm}
+
+\section{Einleitung}
+Beispiel um ein Bild einzufügen mit einer spezifischen Größe
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=\groesse]{images/PHWTLogo.jpg}
+    \caption{Beschreibung}
+    \label{fig:referenz}
+\end{figure}
+\FloatBarrier
+
+\subsection{.}
+Hier kann etwas stehen ... \par
+% bibliography reference 
+\nocite{Abadi.2016} % not visible in document
+\cite{Abadi.2016}  % visible in document
+
+\subsubsection{-}
+Hier kann etwas stehen ... \par
+\nameref{marker}
+
+\newpage
+\section{Hauptteil}
+Beispiel einer Auflistung
+
+\begin{itemize}
+    \item Hallo
+    \item Hello
+\end{itemize}
+
+\begin{enumerate}[noitemsep]
+\centering
+    \item Hallo
+    \item Hello
+\end{enumerate}
+
+\subsection{..}
+Hier kann etwas stehen ...
+
+\subsubsection{--}
+Hier kann etwas stehen ...
+
+\newpage
+\section{Schluss}
+Beispiel für eine Mathegleichung
+
+\begin{displaymath}
+\scalebox{3}{$\epsilon = \frac{\Delta\sigma}{\sqrt{\pi}}$}
+\end{displaymath}
+
+\subsection{...}
+Hier kann etwas stehen ...
+
+\subsubsection{---}
+Hier kann etwas stehen ...
+
+
+\input{settings/endofdocument}
+\end{document}
