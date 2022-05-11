@@ -86,6 +86,7 @@ Beispiel für eine Tabelle
 \end{table}
 \egroup
 
+\newpage
 \subsubsection{--}
 Weiteres Beispiel für eine Tabelle
 
@@ -109,6 +110,25 @@ Weiteres Beispiel für eine Tabelle
     \end{tabular}
     \caption{Zu untersuchende Werkstoffe}
     \label{tab:tabelle2}
+\end{table}
+\egroup
+\FloatBarrier
+
+\subsubsection{~~}
+Tabelle mit fester Spalten Breite
+
+\bgroup
+\def\arraystretch{1.5}
+\begin{table}[!ht]
+    \centering
+    \begin{tabularx}{\textwidth}{X|X}
+    Vorteil & Nachteil \\
+    \hline
+    Läuft unabhängig vom Programm & Benötigt einen Timer \\
+    Genaueres PWM-Signal & Signalausgabe nur auf bestimmten, fest vorgegebenen Pins möglich\\
+    Bieter mehr Möglichkeiten bei gleichem Softwareaufwand & Nur Teiler durch 2 möglich \\
+    \end{tabularx}
+    \label{tab:my_label}
 \end{table}
 \egroup
 
